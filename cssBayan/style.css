@@ -8,25 +8,18 @@ body {
   line-height: 1.5;
   background-color: #27cb71;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 120rem;
+  position: static;
+  min-width: 20rem;
   margin: 0 auto;
-  padding: 0 20rem;
+  padding: 1rem 1rem;
 }
 
 .box {
   color: red;
-}
-
-.box:hover {
-  color: black;
-}
-
-.box:hover > div > label > svg {
-  display: block;
 }
 
 .name {
@@ -55,8 +48,8 @@ body {
 }
 
 .mem {
-  width: 20rem;
-  height: 10rem;
+  width: 16rem;
+  height: 8rem;
 }
 
 .button {
@@ -93,8 +86,65 @@ body {
   align-items: center;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
+
+.icon {
+  display: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media screen and  (min-width: 840px) {
+  .container {
+    margin: 0 auto;
+    padding: 2rem 10rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .mem {
+    width: 20rem;
+    height: 10rem;
+  }
+
+}
+
+@media screen and  (min-width: 1400px) {
+  .container {
+    max-width: 120rem;
+    padding: 0 20rem;
+  }
+
+  .box:hover {
+    color: black;
+  }
+
+  .box:hover > div > label > svg {
+    display: block;
+  }
+
+  .name {
+    padding: 0.6rem;
+    font-size: 2.8rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .mem {
+    width: 30rem;
+    height: 15rem;
+  }
 
 .title:hover {
   color: red;
@@ -116,43 +166,9 @@ body {
 
 .icon {
   display: none;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   transition: all 0.3s;
 }
-
-@media screen and  (max-width: 960px) {
-  .container {
-    margin: 0 auto;
-    padding: 2rem 10rem;
-  }
-
-  .name {
-    font-size: 1.6rem;
-  }
-
-  .title {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and  (max-width: 650px) {
-  .container {
-    margin: 0 auto;
-    padding: 1rem 2rem;
-  }
-
-  .name {
-    font-size: 1rem;
-  }
-
-  .title {
-    font-size: 0.8rem;
-  }
-
-  .mem {
-    width: 16rem;
-    height: 10rem;
-  }
 }
