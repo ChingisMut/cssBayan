@@ -6,6 +6,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
   background-color: #27cb71;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -98,53 +99,52 @@ body {
 }
 
 @media screen and  (min-width: 840px) {
-  .container {
-    margin: 0 auto;
-    padding: 2rem 10rem;
-  }
+.container {
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
 
-  .name {
-    font-size: 2rem;
-  }
+.name {
+  font-size: 2rem;
+}
 
-  .title {
-    font-size: 1rem;
-  }
+.title {
+  font-size: 1rem;
+}
 
-  .mem {
-    width: 20rem;
-    height: 10rem;
-  }
-
+.mem {
+  width: 20rem;
+  height: 10rem;
+}
 }
 
 @media screen and  (min-width: 1400px) {
-  .container {
-    max-width: 120rem;
-    padding: 0 20rem;
-  }
+.container {
+  max-width: 120rem;
+  padding: 0 20rem;
+}
 
-  .box:hover {
-    color: black;
-  }
+.box:hover {
+  color: black;
+}
 
-  .box:hover > div > label > svg {
-    display: block;
-  }
+.box:hover > div > label > svg {
+  display: block;
+}
 
-  .name {
-    padding: 0.6rem;
-    font-size: 2.8rem;
-  }
+.name {
+  padding: 0.6rem;
+  font-size: 2.8rem;
+}
 
-  .title {
-    font-size: 1.4rem;
-  }
+.title {
+  font-size: 1.4rem;
+}
 
-  .mem {
-    width: 30rem;
-    height: 15rem;
-  }
+.mem {
+  width: 30rem;
+  height: 15rem;
+}
 
 .title:hover {
   color: red;
